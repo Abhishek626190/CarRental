@@ -1,0 +1,36 @@
+.div1{
+    background-image: url("Car4.jpg");
+    
+    background-repeat: no-repeat;
+    /* height:50%; */
+      /* left: 0px; */
+     /* display: block; */
+     background-size: 100%;
+     border: 1px solid;
+     height: 1200px;
+     /* width: auto; */
+
+}
+.navbar{
+    /* height: 60px; */
+    border: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    /* text-align: right; */
+    /* padding-right: 200px; */
+    background-color: rgb(188, 18, 18);
+    border-color: white;
+    /* display: block; */
+ }
+.nav1 a {
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    /* margin-right: 5px;  */
+    font-size: x-large;
+
+}
+nav a:hover{
+    background-color: blue;
+}
+ 

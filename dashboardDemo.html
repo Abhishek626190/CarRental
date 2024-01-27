@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Add Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #dashboard-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        canvas {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="dashboard-container">
+        <h1> Car Rental Dashboard </h1>
+        <canvas id="chart1"></canvas>
+        <canvas id="chart2"></canvas>
+    </div>
+
+    <script>
+        // Sample data for charts
+        var chart1Data = {
+            labels: ['January', 'February', 'March', 'April', 'May'],
+            datasets: [{
+                label: 'Sales',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                data: [65, 59, 80, 81, 56]
+            }]
+        };
+
+        var chart2Data = {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
+            datasets: [{
+                label: 'Votes',
+                backgroundColor: ['red', 'blue', 'yellow', 'green', 'purple'],
+                data: [12, 19, 3, 5, 2]
+            }]
+        };
+
+        // Create charts
+        var ctx1 = document.getElementById('chart1').getContext('2d');
+        var chart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: chart1Data
+        });
+
+        var ctx2 = document.getElementById('chart2').getContext('2d');
+        var chart2 = new Chart(ctx2, {
+            type: 'doughnut',
+            data: chart2Data
+        });
+    </script>
+</body>
+</html>

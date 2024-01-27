@@ -13,29 +13,33 @@ a {
   /* border: 2px solid; */
   padding-left: 40px;
   font-size: 28px;
-  padding-top: 40px;
+
   color: black;
-  display: block;
+  /* display: block; */
+}
+.a {
+  padding-top: 18px;
 }
 .nav {
   /* border: 2px solid; */
   background-color: white;
   height: 100px;
-  margin-top: 10px;
-  padding-bottom: 25px;
+  /* margin-top: 10px; */
+  /* padding-bottom: 25px;  */
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 li a:hover {
-  color: brown;
+  color: rgb(227, 12, 12);
   /* background-color: aqua; */
 }
-li a img {
-  padding-bottom: 100%;
-}
+
 .bgimg {
   /* border: 2px solid;  */
   padding-top: 30px;
-  height: 600px;
+  height: 800px;
   margin-top: 10px;
   background-image: url("Car1.jpg");
   background-position: 100%;
@@ -48,7 +52,7 @@ li a img {
   color: aliceblue;
   font-family: sans-serif;
   font-size: 300%;
-  padding-top: 300px;
+  padding-top: 450px;
   padding-left: 150px;
   height: 28px;
 }
@@ -131,7 +135,6 @@ li a img {
   float: left;
 }
 .abouttext {
-   
   padding-left: 50px;
   padding-top: 0px;
   /* border: 2px solid red; */
@@ -140,9 +143,8 @@ li a img {
   margin-left: 150px;
   margin-top: 50px;
   float: left;
-  
 }
-.gallery{
+.gallery {
   background-color: rgba(242, 164, 20, 0.87);
 }
 .card1 {
@@ -177,8 +179,5 @@ footer {
 
 .social-icons img {
   color: #fff;
-  height:50px; 
-  
+  height: 50px;
 }
- 
- 
